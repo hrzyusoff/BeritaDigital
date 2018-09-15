@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import './sass/_mixins';
+@import './sass/_variables';
+// @import './node_modules/bulma/sass/base/_all.sass';
+
+html {
+    background-color: $light-grey;
+    color: $dark-grey;
+}

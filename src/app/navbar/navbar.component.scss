@@ -1,0 +1,18 @@
+@import '../../sass/_variables';
+
+.main-nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: $light-grey;
+    height: 90px;
+    width: 100%;
+    box-shadow: 0 -5px 35px -5px;
+    -moz-box-shadow: 0 -5px 35px -5px;
+    -webkit-box-shadow: 0 -5px 35px -5px;
+    img {
+        cursor: pointer;
+    }
+}
