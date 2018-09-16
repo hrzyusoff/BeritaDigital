@@ -1,8 +1,19 @@
 .custom-container {
-  padding-top: 200px;
-  .column {
-    background-color: #fff;
-    margin: 5px;
-    border-radius: 5px;
+  padding: 200px 40px 200px 40px;
+
+  .content-details {
+    text-align: justify;
+    text-justify: inter-word;
   }
+  .box {
+    transition: 0.8s all;
+    cursor: pointer;
+  }
+  .box:hover {
+    transform: scale(0.95);
+  }
+}
+
+.modal {
+  z-index: 999 !important;
 }

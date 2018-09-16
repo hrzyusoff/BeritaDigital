@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,800,900');
 @import './sass/_mixins';
 @import './sass/_variables';
 // @import './node_modules/bulma/sass/base/_all.sass';
@@ -6,4 +7,8 @@
 html {
     background-color: $light-grey;
     color: $dark-grey;
+}
+
+body {
+    font-family: 'Nunito',BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
