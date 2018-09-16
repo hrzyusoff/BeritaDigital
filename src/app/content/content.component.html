@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="custom-container">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent" *ngFor="let topnews of news.articles | slice:0:4">
+        <article class="tile is-child box">
+          <p class="title">{{topnews.title}}</p>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent" *ngFor="let topnews of news.articles | slice:5:9">
+        <article class="tile is-child box">
+          <p class="title">{{topnews.title}}</p>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent" *ngFor="let topnews of news.articles | slice:10:14">
+        <article class="tile is-child box">
+          <p class="title">{{topnews.title}}</p>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent" *ngFor="let topnews of news.articles | slice:14:19">
+        <article class="tile is-child box">
+          <p class="title">{{topnews.title}}</p>
+        </article>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="columns custom-container">
+    <div class="column">
+      <div class="card"  *ngFor="let topnews of news.articles">
+        <div class="card-content">
+          {{topnews.title}}
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
