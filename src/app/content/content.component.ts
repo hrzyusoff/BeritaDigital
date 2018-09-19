@@ -22,7 +22,7 @@ export class ContentComponent implements OnInit {
 
   ngOnInit() {
     // this.newsapi.getTopHeadlines().subscribe(response => { console.log(this.news = response.json())})
-    this.usersapi.getUsers().subscribe(response => { console.log(this.fakenews = response.json())})
+    this.usersapi.getUsers().subscribe(data => { console.log(this.fakenews = data )})
   }
 
   toggleModal() {
