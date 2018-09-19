@@ -30,13 +30,13 @@ export class ContentComponent implements OnInit {
       $(".modal").addClass("is-active");
     });
 
-    $(".delete").click(function () {
+    $(".delete, .modal-close").click(function () {
       $(".modal").removeClass("is-active");
     });
 
-    $(".cancel").click(function () {
-      $(".modal").removeClass("is-active");
-    });
+    // $(".cancel").click(function () {
+    //   $(".modal").removeClass("is-active");
+    // });
 
   }
 
