@@ -6,16 +6,16 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ContentComponent } from './content/content.component';
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
+// import { PageErrorComponent } from './page-error/page-error.component';
 // import { TechComponent } from './content/tech/tech.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ContentComponent,
-    RoutingComponents
+    RoutingComponents,
+    // PageErrorComponent
   ],
   imports: [
     BrowserModule,
