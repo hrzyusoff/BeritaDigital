@@ -12,7 +12,7 @@ import { PageErrorComponent } from './page-error/page-error.component';
 const routes: Routes = [
   { path: '', redirectTo: '/all', pathMatch: 'full'},
   { path: 'all', component: ContentComponent },
-  { path: 'all/:id', component: ContentDetailComponent },
+  { path: 'all/:id', component: ContentComponent },
   { path: 'tech', component: TechComponent},
   { path: '**', component: PageErrorComponent }
 ];

@@ -13,36 +13,33 @@ import * as $ from 'jquery';
 })
 export class ContentComponent implements OnInit {
 
-  news = {
+  public news = {
     articles: []
   }
 
-  fakenews = []
+  public fakenews = [];
+  public modalTitle;
+  public modalBody;
+  public isActive = false;
+  // public isClose = true;
+  // public childFakenews = [];
 
   constructor(private http: HttpClient, private newsapi: NewsService, private usersapi: UsersService, private router:Router) { }
 
   ngOnInit() {
     // this.newsapi.getTopHeadlines().subscribe(response => { console.log(this.news = response.json())})
-    this.usersapi.getUsers().subscribe(data => { console.log(this.fakenews = data )})
+    this.usersapi.getUsers().subscribe(data => { console.log(this.fakenews = data )});
   }
 
-  toggleModal(topnews) {
-    //open modal
-    if($(".modal-open").click(function () {
-      $(".modal").addClass("is-active");
-      //navigatebetweenids
-    })){
-      this.router.navigate(['/all', topnews.id]);
-    } else {
-    //close modal
-    $(".delete, .modal-close").click(function () {
-      $(".modal").removeClass("is-active");
-    });
-    }
-    // $(".cancel").click(function () {
-    //   $(".modal").removeClass("is-active");
-    // });
+  openModal(topnews) {
+    this.isActive = true;
+    this.router.navigate(['/all', topnews.id]);
+    this.modalTitle = topnews.title;
+    this.modalBody = topnews.body;
+  }
 
+  closeModal() {
+    this.isActive = false;
   }
 
 }

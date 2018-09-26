@@ -1,0 +1,9 @@
+//JQUERY IMPLEMENTATION
+//open modal
+// $(".modal-open").click(function () {
+//   $(".modal").addClass("is-active");
+// });
+//close modal
+// $(".delete, .modal-close").click(function () {
+//   $(".modal").removeClass("is-active");
+// });

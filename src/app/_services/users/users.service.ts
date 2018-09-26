@@ -13,10 +13,10 @@ export class UsersService {
   constructor(private http: HttpClient) { }
 
   getUsers(): Observable<fakeusers[]> {
-    return this.http.get<fakeusers[]>('https://jsonplaceholder.typicode.com/posts').pipe(catchError(this.errorHandler))
+    return this.http.get<fakeusers[]>('https://jsonplaceholder.typicode.com/posts').pipe(catchError(this.errorHandler));
   }
 
   errorHandler(error: HttpErrorResponse) {
-    return observableThrowError(error.message || "Ops it is an error !")
+    return observableThrowError(error.message || "Ops it is an error !");
   }
 }

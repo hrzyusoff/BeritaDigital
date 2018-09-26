@@ -1,43 +1,47 @@
 <div class="container">
   <div class="custom-container">
-    <!-- <p *ngFor="let user of users | slice:0:3">{{user.name}}</p> -->
     <div class="tile is-ancestor">
       <div class="tile is-parent" *ngFor="let topnews of fakenews | slice:0:3">
         <article class="tile is-child box">
-          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5>
+          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5><br>
           <div class="content">
             <p class="content-details">{{topnews.body}}</p>
           </div>
+          <a class="button is-primary modal-open" (click)="toggleModal(topnews)">Read more</a>
         </article>
+        <!-- <app-content-detail [parentData]="childFakenews"></app-content-detail> -->
       </div>
     </div>
     <div class="tile is-ancestor">
       <div class="tile is-parent" *ngFor="let topnews of fakenews | slice:4:7">
         <article class="tile is-child box">
-          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5>
+          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5><br>
           <div class="content">
             <p class="content-details">{{topnews.body}}</p>
           </div>
+          <a class="button is-primary" (click)="toggleModal(topnews)">Read More</a>
         </article>
       </div>
     </div>
     <div class="tile is-ancestor">
       <div class="tile is-parent" *ngFor="let topnews of fakenews | slice:8:11">
         <article class="tile is-child box">
-          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5>
+          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5><br>
           <div class="content">
             <p class="content-details">{{topnews.body}}</p>
           </div>
+          <a class="button is-primary" (click)="toggleModal(topnews)">Read more</a>
         </article>
       </div>
     </div>
     <div class="tile is-ancestor">
       <div class="tile is-parent" *ngFor="let topnews of fakenews | slice:12:15">
         <article class="tile is-child box">
-          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5>
+          <h5 class="is-size-5 has-text-weight-bold">{{topnews.title}}</h5><br>
           <div class="content">
             <p class="content-details">{{topnews.body}}</p>
           </div>
+          <a class="button is-primary" (click)="toggleModal(topnews)">Read More</a>
         </article>
       </div>
     </div>
